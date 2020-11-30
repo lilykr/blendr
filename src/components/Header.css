@@ -1,0 +1,132 @@
+@media only screen and (max-device-width: 700px) {
+  .mood-title {
+    display: none;
+  }
+  .random-title {
+    display: none;
+  }
+  .favorite-title {
+    display: none;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+  .logo {
+    max-width: 90px;
+    max-height: 90px;
+    margin-top: 20px;
+  }
+  .my-mood,
+  .my-random,
+  .my-favorite {
+    max-width: 35px;
+    max-height: 35px;
+  }
+
+  .buttons-header {
+    max-width: 100px;
+  }
+}
+
+.header-container {
+  background-color: #ffc09f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  border-radius: 10px;
+  height: 13rem;
+}
+
+.buttons-header {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-left: 2em;
+}
+
+.logo:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.my-mood,
+.my-random,
+.my-favorite {
+  /* border: solid thin grey; */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.my-mood:hover,
+.my-random:hover,
+.my-favorite:hover {
+  box-shadow: 0 0 20px rgb(121, 117, 117);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.mood-button-h,
+.random-button-h,
+.favorites-button-h {
+  text-align: center;
+}
+
+.mood-title {
+  font-weight: bold;
+  margin: auto;
+  font-family: pacifico;
+}
+
+.my-mood {
+  width: 50px;
+  height: 50px;
+}
+
+.random-title {
+  font-weight: bold;
+  margin: auto;
+  font-family: pacifico;
+}
+
+.my-random {
+  width: 50px;
+  height: 50px;
+}
+
+.favorite-title {
+  font-weight: bold;
+  margin: auto;
+  font-family: pacifico;
+}
+
+.my-favorite {
+  width: 50px;
+  height: 50px;
+}

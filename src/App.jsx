@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import data from "./recipe.json";
+import Header from "./components/Header";
 import Random from "./components/Random";
 import RecipePage from "./components/RecipePage";
 import MoodsPage from "./components/MoodsPage";
@@ -11,17 +12,16 @@ import FavoritesPage from "./components/FavoritesPage";
 import SearchBar from "./components/SearchBar";
 import SearchPage from "./components/SearchPage";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const recipes = data.meals;
 
 function App() {
   return (
     <Router>
-      <div className="header">
-        <Link to="/">Home</Link>
-        <Link to="/moods">Moods</Link>
-        <Link to="/random">Random</Link>
-        <Link to="/my-favorites">My favorites</Link>
+      <ScrollToTop />
+      <div>
+        <Header />
       </div>
 
       <div className="content-container">

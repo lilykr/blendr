@@ -3,3 +3,11 @@
   font-size: 40px;
   padding: 5px;
 }
+
+@media (max-width: 700px) {
+  .error-msg {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+  }
+}

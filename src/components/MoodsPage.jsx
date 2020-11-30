@@ -5,6 +5,16 @@ import styled from "styled-components";
 const CardsContainerMood = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 700px) {
+    justify-content: center;
+  }
+`;
+
+const BigContainer = styled.div`
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const MoodCard = styled.div`
@@ -19,6 +29,10 @@ const MoodCard = styled.div`
     opacity: 0.8;
     transition: 0.3s;
   }
+  @media (max-width: 700px) {
+    max-width: 300px;
+    max-height: 170px;
+  }
 `;
 
 const TitleMoodCard = styled.h1`
@@ -27,6 +41,9 @@ const TitleMoodCard = styled.h1`
   color: white;
   text-align: center;
   font-size: 30px;
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
 `;
 
 const Image = styled.img`
@@ -35,6 +52,10 @@ const Image = styled.img`
   width: 400px;
   border-radius: 10px;
   object-fit: cover;
+  @media (max-width: 700px) {
+    max-width: 280px;
+    max-height: 170px;
+  }
 `;
 
 const Overlay = styled.div`
@@ -43,21 +64,28 @@ const Overlay = styled.div`
   width: 400px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 47%);
   border-radius: 10px;
+  @media (max-width: 700px) {
+    max-width: 280px;
+  }
 `;
 
 const Title = styled.h1`
   display: flex;
   text-align: center;
-  font-weight: bold;
+  font-weight: light;
   color: #89c0a9;
-  font-size: 80px;
+  font-size: 60px;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
 `;
 
 function MoodsPage() {
   return (
-    <div className="mood">
+    <BigContainer className="mood">
       <Title>Moods</Title>
       <CardsContainerMood>
         <Link to="/moods/dinner-with-friends">
@@ -122,7 +150,7 @@ function MoodsPage() {
           </MoodCard>
         </Link>
       </CardsContainerMood>
-    </div>
+    </BigContainer>
   );
 }
 

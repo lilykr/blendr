@@ -37,7 +37,7 @@
   text-overflow: ellipsis;
   align-items: flex-end;
   pointer-events: none;
-  width: 100px;
+  width: 110px;
   height: 220px;
 }
 
@@ -51,12 +51,16 @@
   margin: 8px;
 }
 
-img {
+.card-img {
   border-radius: 10px;
   width: 100%;
   height: 100%;
   margin: 80 0 0px;
   cursor: pointer;
+}
+
+.icon {
+  width: 45px;
 }
 
 .a {

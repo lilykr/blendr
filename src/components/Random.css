@@ -12,9 +12,10 @@
 
 .title-random {
   text-align: center;
-  font-weight: bold;
+  font-weight: light;
   color: #89c0a9;
-  font-size: 80px;
+  font-size: 60px;
+  padding-top: 30px;
 }
 
 .random-recipe {
@@ -56,13 +57,41 @@
   transform: scale(1.1);
 }
 
-@keyframes slideDown {
-  from {
-    transform: translate(1500px, 10px);
-    opacity: 0;
+@media (min-width: 700px) {
+  @keyframes slideDown {
+    from {
+      transform: translate(1500px, 10px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(700px, 10px);
+      opacity: 1;
+    }
   }
-  to {
-    transform: translate(700px, 10px);
-    opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .title-random {
+    font-size: 30px;
+  }
+
+  .random-recipe > .recipe-card .recipe-card-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    color: white;
+    text-decoration-line: none;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: flex-end;
+    pointer-events: none;
+    width: 100px;
+    height: 220px;
   }
 }

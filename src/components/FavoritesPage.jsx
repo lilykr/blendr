@@ -5,9 +5,13 @@ import RecipeCard from "./RecipeCard";
 
 const Title = styled.h1`
   text-align: center;
-  font-weight: bold;
+  font-weight: light;
   color: #89c0a9;
-  font-size: 80px;
+  font-size: 60px;
+  padding-top: 30px;
+  @media (max-width: 700px) {
+    font-size: 30px;
+  }
 `;
 
 function getFavorites() {
@@ -28,7 +32,7 @@ function FavoritesPage() {
     Promise.all(promises).then((res) => {
       setFavoriteRecipes(res.flat());
     });
-  }, []);
+  }, [favoriteRecipes]);
 
   return (
     <>

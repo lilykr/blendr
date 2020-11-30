@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import axios from "axios"
+import "./recipePage.css";
 
 function RecipePage() {
   const { recipeId } = useParams();
@@ -39,21 +40,33 @@ function RecipePage() {
 
   return (
     <div>
-      <h1>{recipe.strMeal}</h1>
-      <img src={recipe.strMealThumb} alt="meal" />
-      <h1>Ingredients</h1>
-      <div>
-        {ingredients.map((item) => (
-          <li>{item}</li>
-        ))}
+      <div className="recipe-page-div-img">
+        <h1 className="recipe-page-h1">{recipe.strMeal}</h1>
+        <img src={recipe.strMealThumb} alt="meal" className="recipe-page-img" />
       </div>
-      <div>
-        {measures.map((item) => (
-          <li>{item}</li>
-        ))}
+      <div className="recipe-page-title-ingredients-description">
+        <div className="recipe-page-block-ingredients">
+          <h1 className="recipe-page-h1-ingredients">Ingredients</h1>
+          <div className="recipe-page-ingredients-measure">
+            <div className="recipe-page-ingredients">
+              {ingredients.map((item) => (
+                <li>{item}</li>
+              ))}
+            </div>
+            <div className="recipe-page-measure">
+              {measures.map((item) => (
+                <li>{item}</li>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="recipe-page-block-description">
+          <h1 className="recipe-page-h1-description">Description</h1>
+          <div className="recipe-page-instructions">
+            {recipe.strInstructions}
+          </div>
+        </div>
       </div>
-      <h1>Description</h1>
-      <div>{recipe.strInstructions}</div>
     </div>
   );
 }

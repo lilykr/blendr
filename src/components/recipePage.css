@@ -1,0 +1,118 @@
+@media (min-width: 800px) {
+  .recipe-page-div-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recipe-page-img {
+    height: 400px;
+    width: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .recipe-page-ingredients-measure {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recipe-page-measure {
+    padding-left: 10px;
+  }
+
+  .recipe-page-title-ingredients-description {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .recipe-page-block-ingredients {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8em;
+    list-style: none;
+    align-items: flex-start;
+    font-family: pacifico;
+  }
+
+  .recipe-page-block-description {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.8em;
+    padding-left: 10px;
+  }
+
+  .recipe-page-instructions {
+    padding-left: 20px;
+    border-left: solid 1px;
+  }
+  .recipe-page-h1, .recipe-page-h1-ingredients, .recipe-page-h1-description {
+    color: #89c0a9;
+    font-family: pacifico;
+  }
+  .recipe-page-h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 800px) {
+  .recipe-page-div-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recipe-page-img {
+    height: 400px;
+    width: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+
+  .recipe-page-ingredients-measure {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    line-height: 1.8em;
+    list-style: none;
+    font-family: pacifico;
+
+  }
+
+  .recipe-page-h1-ingredients,
+  .recipe-page-h1-description {
+    display: flex;
+    justify-content: center;
+  }
+
+  .recipe-page-instructions {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+    line-height: 1.8em;
+  }
+
+  .recipe-page-h1, .recipe-page-h1-ingredients, .recipe-page-h1-description {
+    color: #89c0a9;
+    font-family: pacifico;
+  }
+  .recipe-page-h1 {
+    font-size: 60px;
+  }
+
+}

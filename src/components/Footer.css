@@ -8,6 +8,7 @@
   border-radius: 10px;
   font-family: pacifico;
   padding: 30px;
+  height: 28rem;
 }
 
 .blndr-logo {
@@ -42,7 +43,7 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center
+  justify-content: center;
 }
 
 .letter-mail {

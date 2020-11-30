@@ -15,7 +15,7 @@ function SearchPage({ match }) {
 
   return (
     <>
-      <h1>Search results for: {query} </h1>
+      <h1 className="title-recipe-library">Search results for: {query} </h1>
       <RecipeList recipeList={recipes} />
     </>
   );

@@ -2,7 +2,24 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  font-weight: bold;
+  font-weight: light;
   color: #89c0a9;
-  font-size: 80px;
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+.recipes-display {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30 px;
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  .title-recipe-library {
+    font-size: 30px;
+  }
+  /* .recipes-display {
+    justify-content: center;
+  } */
 }
