@@ -33,9 +33,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   border-radius: 10px;
-  height: 13rem;
+  height: 12rem;
 }
 
 .buttons-header {
