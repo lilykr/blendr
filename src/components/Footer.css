@@ -1,0 +1,101 @@
+.footer-container {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: #ffc09f;
+  bottom: 0;
+  margin-top: 2rem;
+  height: 22rem;
+  border-radius: 10px;
+  font-family: pacifico;
+  padding: 30px;
+}
+
+.blndr-logo {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+}
+
+.blndr-logo:before {
+  content: "";
+  position: absolute;
+  left: calc(80% - 5px);
+  top: calc(50% - 3px);
+  border-bottom: 2px ridge grey;
+  margin-top: 12px;
+  width: 50%;
+}
+
+.blndr-logo:after {
+  content: "";
+  position: absolute;
+  right: calc(80% - 5px);
+  top: calc(50% - 3px);
+  border-bottom: 2px ridge grey;
+  margin-top: 12px;
+  width: 50%;
+}
+
+.content-newsletter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.letter-mail {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.email {
+  border-radius: 10px;
+  display: flex;
+}
+
+.button-newsletter {
+  border-radius: 5px;
+  transition: color 1.5s;
+  background-color: #89c0a9;
+  border: none;
+  color: white;
+  font-size: large;
+  padding: 10px;
+}
+
+.button-newsletter:hover {
+  color: #89c0a9;
+  transform: scale(1.1);
+}
+
+.social-net {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: space-evenly;
+}
+
+.logos-social {
+  width: 40px;
+  height: 40px;
+}
+
+.mention-legal {
+  display: flex;
+  font-size: 15px;
+  margin-top: 25px;
+  justify-content: center;
+}
+
+.terms-conditions {
+  padding: 10px;
+}
+
+.privacy-policy {
+  padding: 10px;
+}

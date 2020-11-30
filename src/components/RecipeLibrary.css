@@ -1,0 +1,8 @@
+.title-recipe-library {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #89c0a9;
+  font-size: 80px;
+}
